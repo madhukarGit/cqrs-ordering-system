@@ -15,6 +15,8 @@
   <modules>
     <module>order-service</module>
     <module>common</module>
+      <module>infrastucture</module>
+    <module>infrastucture/kafka</module>
   </modules>
 
   <properties>
@@ -57,6 +59,30 @@
       <dependency>
         <groupId>com.food.ordering.system</groupId>
         <artifactId>common-domain</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.food.ordering.system</groupId>
+        <artifactId>kafka-producer</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.food.ordering.system</groupId>
+        <artifactId>kafka-consumer</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.food.ordering.system</groupId>
+        <artifactId>kafka-model</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.food.ordering.system</groupId>
+        <artifactId>kafka-config-data</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>
